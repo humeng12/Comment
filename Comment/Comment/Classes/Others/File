@@ -1,0 +1,129 @@
+
+
+http://api.meituan.com/group/v1/opt/homepage/display?__skua=1dd130e7cbab2bd5a5aefdfe53173937&movieBundleVersion=100&utm_campaign=AgroupBgroupH0&__skts=1480769758.704626&__vhost=api.mobile.meituan.com&utm_term=7.5.0&__skcy=YL0mXd%2BZLRRS1KUBAqvdx%2FDb6WM%3D&ci=1&__skno=D5AFEDB8-9DAE-4EC1-849D-7177FA35F0FF&client=iphone&uuid=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_content=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_source=AppStore&utm_medium=iphone&version_name=7.5.0&__reqTraceID=D821BE3F-F3FB-4310-841A-B18C49C0E734&latlng=40.079686%2C116.375468&js_patch_version=12&rn_package_version=0&__skck=3c0cf64e4b039997339ed8fec4cddf05&msid=CC200AF4-2171-41FF-BBF9-EED564B8F44D2016-12-03-19-57280
+
+
+
+GET /group/v1/opt/homepage/display?__skua=1dd130e7cbab2bd5a5aefdfe53173937&movieBundleVersion=100&utm_campaign=AgroupBgroupH0&__skts=1480769758.704626&__vhost=api.mobile.meituan.com&utm_term=7.5.0&__skcy=YL0mXd%2BZLRRS1KUBAqvdx%2FDb6WM%3D&ci=1&__skno=D5AFEDB8-9DAE-4EC1-849D-7177FA35F0FF&client=iphone&uuid=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_content=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_source=AppStore&utm_medium=iphone&version_name=7.5.0&__reqTraceID=D821BE3F-F3FB-4310-841A-B18C49C0E734&latlng=40.079686%2C116.375468&js_patch_version=12&rn_package_version=0&__skck=3c0cf64e4b039997339ed8fec4cddf05&msid=CC200AF4-2171-41FF-BBF9-EED564B8F44D2016-12-03-19-57280 HTTP/1.1
+
+
+//猜你喜欢数据
+http://api.meituan.com/group/v2/recommend/homepage/city/1?__skck=3c0cf64e4b039997339ed8fec4cddf05&movieBundleVersion=100&__vhost=api.mobile.meituan.com&position=40.079686%2C116.375468&wifi-mac=c4%3A47%3A3f%3A4a%3Aa6%3Af8&utm_term=7.5.0&ci=1&__skcy=SPsEBfuE%2Fhz%2FnUsKuDEIoDFm4Vs%3D&__skua=1dd130e7cbab2bd5a5aefdfe53173937&__skts=1480769758.708734&__skno=AAD1B4CC-2DF6-4EA9-8EA3-DC110DD470A4&client=iphone&wifi-name=CU_laochen&uuid=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_content=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_source=AppStore&version_name=7.5.0&utm_medium=iphone&wifi-cur=0&wifi-strength=&offset=0&supportId=1&__reqTraceID=3200D1E0-C747-4260-8EDB-1D926818DF4E&js_patch_version=12&rn_package_version=0&utm_campaign=AgroupBgroupH0&msid=CC200AF4-2171-41FF-BBF9-EED564B8F44D2016-12-03-19-57280
+
+
+
+//广告
+http://aop.meituan.com/api/entry/topWelcome?uuid=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_source=AppStore&utm_term=7.5.0&latlng=40.079686%2C116.375468&rn_package_version=0&utm_content=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_medium=iphone&version_name=7.5.0&movieBundleVersion=100&utm_campaign=AgroupBgroupH0&__reqTraceID=B59E27FC-7000-4234-92D5-1DD49C565FEF&js_patch_version=12&ci=1&msid=CC200AF4-2171-41FF-BBF9-EED564B8F44D2016-12-03-19-57280
+
+
+
+
+
+
+
+http://aop.meituan.com/api/entry/specialsku?uuid=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_source=AppStore&utm_term=7.5.0&latlng=40.079686%2C116.375468&rn_package_version=0&utm_content=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_medium=iphone&version_name=7.5.0&movieBundleVersion=100&utm_campaign=AgroupBgroupH0&__reqTraceID=86B86C62-7728-4C90-AD82-C85F6644AE8A&js_patch_version=12&ci=1&msid=CC200AF4-2171-41FF-BBF9-EED564B8F44D2016-12-03-19-57280
+
+{
+"status": 1,
+"data": {
+"id": 10023,
+"columnTitle": "热卖推荐",
+"entryid": 10023,
+"updateTime": 0,
+"name": "specialsku",
+"resource": {
+"linkRegion": [],
+"skuRegion": []
+}
+},
+"server": {
+"time": 1480769758
+}
+}
+
+
+http://aop.meituan.com/api/entry/lowpricepoi?uuid=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_source=AppStore&utm_term=7.5.0&latlng=40.079686%2C116.375468&rn_package_version=0&utm_content=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_medium=iphone&version_name=7.5.0&movieBundleVersion=100&utm_campaign=AgroupBgroupH0&__reqTraceID=0DCEE4DF-11B5-462A-8FC3-F6EB75C906AD&js_patch_version=12&ci=1&msid=CC200AF4-2171-41FF-BBF9-EED564B8F44D2016-12-03-19-57280
+
+
+http://aop.meituan.com/api/entry/foreigncategory?uuid=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_source=AppStore&utm_term=7.5.0&utm_content=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&rn_package_version=0&version_name=7.5.0&utm_medium=iphone&movieBundleVersion=100&utm_campaign=AgroupBgroupH0&__reqTraceID=455F1A14-3596-444E-AAB1-496F060FA4A9&js_patch_version=12&ci=1&msid=CC200AF4-2171-41FF-BBF9-EED564B8F44D2016-12-03-19-57280
+
+http://aop.meituan.com/api/entry/topic2?uuid=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_source=AppStore&utm_term=7.5.0&latlng=40.079686%2C116.375468&rn_package_version=0&utm_content=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_medium=iphone&version_name=7.5.0&movieBundleVersion=100&utm_campaign=AgroupBgroupH0&__reqTraceID=8516E4CB-DA4B-4271-902E-14A5E4725131&js_patch_version=12&ci=1&msid=CC200AF4-2171-41FF-BBF9-EED564B8F44D2016-12-03-19-57280
+
+
+http://aop.meituan.com/api/entry/topic3?uuid=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_source=AppStore&utm_term=7.5.0&latlng=40.079686%2C116.375468&rn_package_version=0&utm_content=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_medium=iphone&version_name=7.5.0&movieBundleVersion=100&utm_campaign=AgroupBgroupH0&__reqTraceID=5EBA3D00-77EF-405C-A0B8-1873381152FF&js_patch_version=12&ci=1&msid=CC200AF4-2171-41FF-BBF9-EED564B8F44D2016-12-03-19-57280
+
+
+
+
+
+
+
+
+
+http://aop.meituan.com/api/entry/discountNew?uuid=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_source=AppStore&utm_term=7.5.0&latlng=40.079686%2C116.375468&rn_package_version=0&utm_content=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_medium=iphone&version_name=7.5.0&movieBundleVersion=100&utm_campaign=AgroupBgroupH0&__reqTraceID=35EB868C-4AA8-4178-A67A-5CBF5E73F19C&js_patch_version=12&ci=1&msid=CC200AF4-2171-41FF-BBF9-EED564B8F44D2016-12-03-19-57280
+
+data": {
+"entryid": 10032,
+"resource": [{
+"deputytypefacecolor": "#FFB100",
+"waimai_id": 6641,
+"sharemessage": "第一次，吃壕点！外卖最高立减30元",
+"maintitle": "新人特权",
+"typefacecolor": "#333333",
+"imgurlreward": "http://p0.meituan.net/feop/420d6587b55355ba4eadb1b395638876220320.png",
+"type": 1,
+"deputytitle": "首单最高减30",
+"rewardtypefacecolor": "#333333",
+"id": 4322,
+"imgurl50": "http://p0.meituan.net/feop/98de8338adffa69caaab1d1f3f4ccc0b16306.png",
+"shareurl": "http://i.meituan.com/firework/xinyonghushoujian?activity_id=6641",
+"rewardtitle": "品尝精品外卖",
+"start": 0,
+"imgurl69": "http://p0.meituan.net/feop/613bd080f9ceff66db312dc9cb8b5da421851.png",
+"tplurl": "imeituan://www.meituan.com/web?url=http://i.meituan.com/firework/xinyonghushoujian?activity_id=6641",
+"end": 0
+},
+
+
+
+
+http://aop.meituan.com/api/entry/topic4?uuid=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_source=AppStore&utm_term=7.5.0&latlng=40.079686%2C116.375468&rn_package_version=0&utm_content=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_medium=iphone&version_name=7.5.0&movieBundleVersion=100&utm_campaign=AgroupBgroupH0&__reqTraceID=30788814-5508-445A-8E80-944CC34FA3DE&js_patch_version=12&ci=1&msid=CC200AF4-2171-41FF-BBF9-EED564B8F44D2016-12-03-19-57280
+
+
+http://aop.meituan.com/api/entry/indexShake?uuid=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_source=AppStore&utm_term=7.5.0&latlng=40.079686%2C%20116.375468&rn_package_version=0&utm_content=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_medium=iphone&version_name=7.5.0&movieBundleVersion=100&utm_campaign=AgroupBgroupH0&__reqTraceID=A2055FE0-A3B7-46E0-9B11-C33B3842A81A&js_patch_version=12&ci=1&msid=CC200AF4-2171-41FF-BBF9-EED564B8F44D2016-12-03-19-57280
+
+
+
+
+
+http://advert.mobile.meituan.com/api/v3/adverts?utm_campaign=AgroupBgroupH0&msid=CC200AF4-2171-41FF-BBF9-EED564B8F44D2016-12-03-19-57280&movieBundleVersion=100&utm_term=7.5.0&ci=1&uuid=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&category=9999&utm_content=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_medium=iphone&utm_source=AppStore&version=7.5.0&version_name=7.5.0&uid=&cityid=1&__reqTraceID=3CC2EF02-EC69-4A5A-92D0-3B46E759FA9E&devid=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&latlng=40.078297%2C116.369228&js_patch_version=12&clienttp=iphone&rn_package_version=0&app=group
+
+{
+"data": [{
+"id": 18118,
+"name": "到综-双十二大促1203",
+"commonTitle": "到综-双十二大促1203",
+"imgUrl": "http://p1.meituan.net/mmc/54959e25c3ad1e7b2976bcded80598a858548.jpg",
+"imgUrlSize": "(750, 188)",
+"bigImgTypeUrl": "http://p1.meituan.net/mmc/54959e25c3ad1e7b2976bcded80598a858548.jpg",
+"bigImgUrlSize": "(750, 188)",
+"app": "group",
+"type": 3,
+"typeDesc": "链接到应用内部页面",
+"standIdList": [9999],
+"startTime": 1480694400000,
+"endTime": 1480780740000,
+"level": 1,
+"newUser": 0,
+"closable": 2,
+"channelType": 0,
+"channelListMap": {},
+"businessName": "",
+"businessIds": "",
+"url": "imeituan://www.meituan.com/web?url=http://h5.meituan.com/app/gfe-app-page-annual-event-2016/index-mt.html"
+}]
+}
+
+
+
+
