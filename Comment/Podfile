@@ -7,5 +7,7 @@ use_frameworks!
 target 'Comment' do
 
 pod 'AFNetworking'
+pod 'SDWebImage'
+pod 'Masonry'
 
 end

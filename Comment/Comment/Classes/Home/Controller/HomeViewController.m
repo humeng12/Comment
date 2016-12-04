@@ -8,6 +8,8 @@
 
 #import "HomeViewController.h"
 #import "HeaderTableViewCell.h"
+#import "NewsModel.h"
+#import "NewsTableViewCell.h"
 
 @interface HomeViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -54,10 +56,11 @@
 {
     [[HDNetworking sharedHDNetworking] GET:@"http://aop.meituan.com/api/entry/topWelcome?uuid=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_source=AppStore&utm_term=7.5.0&latlng=40.079686%2C116.375468&rn_package_version=0&utm_content=C805B327412AF9F6262501FCEC347B16DF07006BC5B0B6FC8BA253D150E9127E&utm_medium=iphone&version_name=7.5.0&movieBundleVersion=100&utm_campaign=AgroupBgroupH0&__reqTraceID=B59E27FC-7000-4234-92D5-1DD49C565FEF&js_patch_version=12&ci=1&msid=CC200AF4-2171-41FF-BBF9-EED564B8F44D2016-12-03-19-57280" parameters:@{} success:^(id  _Nonnull responseObject) {
 
+        [NewsModel newsModelWithDict:responseObject[@"data"]];
         
     } failure:^(NSError * _Nonnull error) {
         
-
+        
     }];
 }
 
@@ -149,25 +152,9 @@
     if (indexPath.section == 0) {
         
         if (indexPath.row == 0) {
-            
-            HeaderTableViewCell *cell;
-            
-            cell = [HeaderTableViewCell cellWithTableView:tableView];
-            cell.titleArray = @[@[@"美食",@"电影",@"酒店住宿",@"休闲娱乐",@"外卖",@"机票/火车票",@"KTV",@"周边游",@"丽人",@"旅游出行"],@[@"高端酒店",@"足疗按摩",@"美发",@"母子亲子",@"结婚",@"景点",@"水上乐园",@"学习培训",@"家装",@"全部分类"]];
-            
-            cell.imageArray = @[@[@"icon_homepage_foodCategory",@"icon_homepage_movieCategory",@"icon_homepage_hotelCategory",@"icon_homepage_entertainmentCategory",@"icon_homepage_takeoutCategory",@"icon_homepage_trainCategory",@"icon_homepage_KTVCategory",@"icon_homepage_aroundjourneyCategory",@"icon_homepage_beautyCategory",@"icon_homepage_travellingCategory"],@[@"icon_homepage_highStarHotelCategory",@"icon_homepage_foottreatCategory",@"icon_homepage_haircutCategory",@"icon_homepage_momInfantCategory",@"icon_homepage_marriageCategory",@"icon_homepage_sceneryCategory",@"icon_homepage_aroundjourneyCategory",@"icon_homepage_educationCategory",@"icon_homepage_homeDecorationCategory",@"icon_homepage_moreCategory"]];
-            
-            return cell;
+            return [self headerTableviewCell:tableView indexPath:indexPath];
         } else {
-            UITableViewCell *cell = nil;
-            static NSString *cellID = @"cellID";
-            cell = [tableView dequeueReusableCellWithIdentifier:cellID];
-            
-            if (cell == nil) {
-                cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
-            }
-            
-            return cell;
+            return [self newsTableviewCell:tableView indexPath:indexPath];
         }
     } else {
         
@@ -181,6 +168,34 @@
      
          return cell;
     }
+}
+
+
+-(HeaderTableViewCell *)headerTableviewCell:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath
+{
+    HeaderTableViewCell *cell;
+    
+    cell = [HeaderTableViewCell cellWithTableView:tableView];
+    cell.titleArray = @[@[@"美食",@"电影",@"酒店住宿",@"休闲娱乐",@"外卖",@"机票/火车票",@"KTV",@"周边游",@"丽人",@"旅游出行"],@[@"高端酒店",@"足疗按摩",@"美发",@"母子亲子",@"结婚",@"景点",@"水上乐园",@"学习培训",@"家装",@"全部分类"]];
+    
+    cell.imageArray = @[@[@"icon_homepage_foodCategory",@"icon_homepage_movieCategory",@"icon_homepage_hotelCategory",@"icon_homepage_entertainmentCategory",@"icon_homepage_takeoutCategory",@"icon_homepage_trainCategory",@"icon_homepage_KTVCategory",@"icon_homepage_aroundjourneyCategory",@"icon_homepage_beautyCategory",@"icon_homepage_travellingCategory"],@[@"icon_homepage_highStarHotelCategory",@"icon_homepage_foottreatCategory",@"icon_homepage_haircutCategory",@"icon_homepage_momInfantCategory",@"icon_homepage_marriageCategory",@"icon_homepage_sceneryCategory",@"icon_homepage_aroundjourneyCategory",@"icon_homepage_educationCategory",@"icon_homepage_homeDecorationCategory",@"icon_homepage_moreCategory"]];
+    
+    return cell;
+}
+
+
+
+-(NewsTableViewCell *)newsTableviewCell:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath
+{
+    NewsTableViewCell *cell = nil;
+    static NSString *cellID = @"cellID";
+    cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    
+    if (cell == nil) {
+        cell = [[NewsTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
+    }
+    
+    return cell;
 }
 
 

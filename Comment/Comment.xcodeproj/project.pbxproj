@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BA920681DF404C1000E84E5 /* CityNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA920671DF404C1000E84E5 /* CityNews.m */; };
+		6BA9206B1DF406BD000E84E5 /* NewsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA9206A1DF406BD000E84E5 /* NewsTableViewCell.m */; };
+		6BE4E9731DF4011E002ED4F8 /* NewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE4E9721DF4011E002ED4F8 /* NewsModel.m */; };
 		6BE7BDA41DF2D658001237B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7BDA31DF2D658001237B3 /* main.m */; };
 		6BE7BDAA1DF2D658001237B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BE7BDA91DF2D658001237B3 /* ViewController.m */; };
 		6BE7BDAD1DF2D658001237B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BE7BDAB1DF2D658001237B3 /* Main.storyboard */; };
@@ -58,6 +61,12 @@
 /* Begin PBXFileReference section */
 		169A3FC22E151B37E02DA7F3 /* Pods-Comment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Comment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Comment/Pods-Comment.debug.xcconfig"; sourceTree = "<group>"; };
 		46108CA97628469B034DF35A /* Pods_Comment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Comment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BA920661DF404C1000E84E5 /* CityNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityNews.h; sourceTree = "<group>"; };
+		6BA920671DF404C1000E84E5 /* CityNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityNews.m; sourceTree = "<group>"; };
+		6BA920691DF406BD000E84E5 /* NewsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsTableViewCell.h; sourceTree = "<group>"; };
+		6BA9206A1DF406BD000E84E5 /* NewsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsTableViewCell.m; sourceTree = "<group>"; };
+		6BE4E9711DF4011E002ED4F8 /* NewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsModel.h; sourceTree = "<group>"; };
+		6BE4E9721DF4011E002ED4F8 /* NewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsModel.m; sourceTree = "<group>"; };
 		6BE7BD9F1DF2D658001237B3 /* Comment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Comment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BE7BDA31DF2D658001237B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6BE7BDA81DF2D658001237B3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -333,6 +342,10 @@
 		6BE7BDE31DF2D78A001237B3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6BE4E9711DF4011E002ED4F8 /* NewsModel.h */,
+				6BE4E9721DF4011E002ED4F8 /* NewsModel.m */,
+				6BA920661DF404C1000E84E5 /* CityNews.h */,
+				6BA920671DF404C1000E84E5 /* CityNews.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -349,6 +362,8 @@
 				6BE7BE261DF319F4001237B3 /* HeaderCollectionCell.h */,
 				6BE7BE271DF319F4001237B3 /* HeaderCollectionCell.m */,
 				6BE7BE281DF319F4001237B3 /* HeaderCollectionCell.xib */,
+				6BA920691DF406BD000E84E5 /* NewsTableViewCell.h */,
+				6BA9206A1DF406BD000E84E5 /* NewsTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -705,12 +720,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BE4E9731DF4011E002ED4F8 /* NewsModel.m in Sources */,
+				6BA920681DF404C1000E84E5 /* CityNews.m in Sources */,
 				6BE7BDFA1DF2DC06001237B3 /* HMTabBar.m in Sources */,
 				6BE7BDAA1DF2D658001237B3 /* ViewController.m in Sources */,
 				6BE7BDA41DF2D658001237B3 /* main.m in Sources */,
 				6BE7BE101DF2E015001237B3 /* FindViewController.m in Sources */,
 				6BE7BE241DF3100F001237B3 /* HeaderTableViewCell.m in Sources */,
 				6BE7BE291DF319F4001237B3 /* HeaderCollectionCell.m in Sources */,
+				6BA9206B1DF406BD000E84E5 /* NewsTableViewCell.m in Sources */,
 				6BE7BDEF1DF2D78A001237B3 /* AppDelegate.m in Sources */,
 				6BE7BE381DF3CA26001237B3 /* HDNetworking.m in Sources */,
 				6BE7BDFD1DF2DCDD001237B3 /* HMTabBarButton.m in Sources */,
