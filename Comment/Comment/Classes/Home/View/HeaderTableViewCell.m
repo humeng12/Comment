@@ -46,8 +46,7 @@ static NSString *cellID = @"collectionCell";
     UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout *)self.collectionView.collectionViewLayout;
     layout.minimumInteritemSpacing = 0;
     layout.minimumLineSpacing = 0;
-    layout.itemSize = self.collectionView.bounds.size;
-    self.collectionView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
+    layout.itemSize = CGSizeMake(kScreenW, self.collectionView.bounds.size.height);
    
 }
 

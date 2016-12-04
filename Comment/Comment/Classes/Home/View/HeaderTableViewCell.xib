@@ -13,18 +13,20 @@
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HeaderTableViewCell">
             <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
-            <autoresizingMask key="autoresizingMask"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="199"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="pEK-pA-Wh1">
+                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="pEK-pA-Wh1">
                         <rect key="frame" x="168" y="162" width="39" height="37"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                         <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="currentPageIndicatorTintColor" red="0.23921568627450979" green="0.72549019607843135" blue="0.68627450980392157" alpha="1" colorSpace="calibratedRGB"/>
                     </pageControl>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bkB-KP-6Vd">
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bkB-KP-6Vd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="162"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="M3i-0J-ZHd">
                             <size key="itemSize" width="50" height="50"/>
@@ -38,19 +40,12 @@
                         </connections>
                     </collectionView>
                 </subviews>
-                <constraints>
-                    <constraint firstItem="pEK-pA-Wh1" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="EAW-t0-KGD"/>
-                    <constraint firstItem="pEK-pA-Wh1" firstAttribute="top" secondItem="bkB-KP-6Vd" secondAttribute="bottom" id="KVS-nY-eDr"/>
-                    <constraint firstAttribute="bottom" secondItem="pEK-pA-Wh1" secondAttribute="bottom" id="Ncb-xT-pFq"/>
-                    <constraint firstItem="bkB-KP-6Vd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ex2-8d-crm"/>
-                    <constraint firstAttribute="trailing" secondItem="bkB-KP-6Vd" secondAttribute="trailing" id="i7B-Ku-DBK"/>
-                    <constraint firstItem="bkB-KP-6Vd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ilM-3X-1K8"/>
-                </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="collectionView" destination="bkB-KP-6Vd" id="Yp5-JR-60o"/>
                 <outlet property="pageControl" destination="pEK-pA-Wh1" id="HIn-nM-pLB"/>
             </connections>
+            <point key="canvasLocation" x="25" y="52"/>
         </tableViewCell>
     </objects>
 </document>

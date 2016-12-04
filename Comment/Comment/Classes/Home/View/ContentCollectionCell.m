@@ -34,7 +34,7 @@ static NSString *headCellID = @"headCellID";
     UICollectionViewFlowLayout *layout = (UICollectionViewFlowLayout *)self.collectionView.collectionViewLayout;
     layout.minimumLineSpacing = 0;
     layout.minimumInteritemSpacing = 0;
-    layout.itemSize = CGSizeMake(self.collectionView.bounds.size.width / 5, self.collectionView.bounds.size.height / 2);
+    layout.itemSize = CGSizeMake(kScreenW / 5, self.collectionView.bounds.size.height / 2);
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -52,7 +52,7 @@ static NSString *headCellID = @"headCellID";
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"%ld",indexPath.item);
+    NSLog(@"%ld",(long)indexPath.item);
 }
 
 @end
